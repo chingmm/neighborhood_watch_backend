@@ -88,3 +88,143 @@ Processing by PostingsController#index as HTML
 Completed 200 OK in 14ms (Views: 7.4ms | ActiveRecord: 5.1ms | Allocations: 7510)
 
 
+Started GET "/postings" for ::1 at 2020-12-08 21:30:48 -0600
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 3.2ms | Allocations: 7429)
+
+
+Started POST "/postings" for ::1 at 2020-12-08 21:38:33 -0600
+Processing by PostingsController#create as */*
+  Parameters: {"name"=>"Anonymous", "neighborhood"=>"Buena Park", "crime_type"=>"Burglary", "short_desc"=>"Apartment was broken into around 11pm last night. Thief got away with some of my jewelry while I wasn't home.", "cross_street"=>"North Buena Ave and East Gordon Terrace Ave", "posting"=>{"name"=>"Anonymous", "neighborhood"=>"Buena Park", "crime_type"=>"Burglary", "short_desc"=>"Apartment was broken into around 11pm last night. Thief got away with some of my jewelry while I wasn't home.", "cross_street"=>"North Buena Ave and East Gordon Terrace Ave"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/postings_controller.rb:20:in `create'
+  [1m[36mPosting Create (1.3ms)[0m  [1m[32mINSERT INTO "postings" ("name", "neighborhood", "crime_type", "short_desc", "cross_street", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Anonymous"], ["neighborhood", "Buena Park"], ["crime_type", "Burglary"], ["short_desc", "Apartment was broken into around 11pm last night. Thief got away with some of my jewelry while I wasn't home."], ["cross_street", "North Buena Ave and East Gordon Terrace Ave"], ["created_at", "2020-12-09 03:38:33.128243"], ["updated_at", "2020-12-09 03:38:33.128243"]]
+  ↳ app/controllers/postings_controller.rb:20:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/postings_controller.rb:20:in `create'
+Completed 201 Created in 6ms (Views: 0.8ms | ActiveRecord: 2.0ms | Allocations: 2950)
+
+
+Started GET "/postings" for ::1 at 2020-12-08 21:38:33 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1540)
+
+
+Started GET "/postings" for ::1 at 2020-12-08 21:44:53 -0600
+Processing by PostingsController#index as HTML
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.4ms | Allocations: 1568)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:15:54 -0600
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (2.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 6.2ms | ActiveRecord: 7.3ms | Allocations: 7596)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:16:51 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1513)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:16:53 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1513)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:17:07 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1513)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:17:48 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1513)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:17:53 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:29:27 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.6ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 1556)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:29:44 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:29:46 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:29:52 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:29:54 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:30:03 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:30:07 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:30:12 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1495)
+
+
+Started GET "/postings" for ::1 at 2020-12-09 18:30:14 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
