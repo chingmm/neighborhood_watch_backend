@@ -228,3 +228,300 @@ Processing by PostingsController#index as */*
 Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1495)
 
 
+Started GET "/postings" for ::1 at 2020-12-11 21:58:24 -0600
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostingsController#index as HTML
+  [1m[36mPosting Load (2.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 6.4ms | ActiveRecord: 7.7ms | Allocations: 7594)
+
+
+Started GET "/notices" for ::1 at 2020-12-11 22:59:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/notices"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/notices" for ::1 at 2020-12-11 23:17:58 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/notices"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/notices" for ::1 at 2020-12-11 23:18:15 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/notices"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/notices" for ::1 at 2020-12-11 23:18:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/notices"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/notices" for ::1 at 2020-12-11 23:18:59 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/notices"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/notices" for ::1 at 2020-12-11 23:19:06 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/notices"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/postings" for ::1 at 2020-12-11 23:22:22 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (2.0ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 2.0ms | Allocations: 1603)
+
+
+Started POST "/postings" for ::1 at 2020-12-11 23:22:34 -0600
+Processing by PostingsController#create as HTML
+  Parameters: {"name"=>"test1", "neighborhood"=>"test2", "crime_type"=>"test3", "short_desc"=>"test4", "cross_street"=>"test5", "posting"=>{"name"=>"test1", "neighborhood"=>"test2", "crime_type"=>"test3", "short_desc"=>"test4", "cross_street"=>"test5"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/postings_controller.rb:20:in `create'
+  [1m[36mPosting Create (7.2ms)[0m  [1m[32mINSERT INTO "postings" ("name", "neighborhood", "crime_type", "short_desc", "cross_street", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "test1"], ["neighborhood", "test2"], ["crime_type", "test3"], ["short_desc", "test4"], ["cross_street", "test5"], ["created_at", "2020-12-12 05:22:34.689629"], ["updated_at", "2020-12-12 05:22:34.689629"]]
+  ↳ app/controllers/postings_controller.rb:20:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/postings_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 0.7ms | ActiveRecord: 9.0ms | Allocations: 2947)
+
+
+Started GET "/postings" for ::1 at 2020-12-11 23:22:41 -0600
+Processing by PostingsController#index as HTML
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1665)
+
+
+Started GET "/postings" for ::1 at 2020-12-11 23:22:57 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1658)
+
+
+Started PUT "/postings/5" for ::1 at 2020-12-11 23:49:04 -0600
+Processing by PostingsController#update as HTML
+  Parameters: {"name"=>"test1", "neighborhood"=>"test2", "crime_type"=>"test3", "short_desc"=>"test4", "cross_street"=>"Weeeeee", "id"=>"5", "posting"=>{"id"=>"5", "name"=>"test1", "neighborhood"=>"test2", "crime_type"=>"test3", "short_desc"=>"test4", "cross_street"=>"Weeeeee"}}
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings" WHERE "postings"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/postings_controller.rb:44:in `set_posting'
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/postings_controller.rb:29:in `update'
+  [1m[36mPosting Update (0.4ms)[0m  [1m[33mUPDATE "postings" SET "cross_street" = $1, "updated_at" = $2 WHERE "postings"."id" = $3[0m  [["cross_street", "Weeeeee"], ["updated_at", "2020-12-12 05:49:04.123059"], ["id", 5]]
+  ↳ app/controllers/postings_controller.rb:29:in `update'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/postings_controller.rb:29:in `update'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 4857)
+
+
+Started GET "/postings" for ::1 at 2020-12-11 23:49:04 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1657)
+
+
+Started PUT "/postings/5" for ::1 at 2020-12-11 23:49:14 -0600
+Processing by PostingsController#update as HTML
+  Parameters: {"name"=>"test1", "neighborhood"=>"test2", "crime_type"=>"test3", "short_desc"=>"test4", "cross_street"=>"Weeeeee", "id"=>"5", "posting"=>{"id"=>"5", "name"=>"test1", "neighborhood"=>"test2", "crime_type"=>"test3", "short_desc"=>"test4", "cross_street"=>"Weeeeee"}}
+  [1m[36mPosting Load (0.4ms)[0m  [1m[34mSELECT "postings".* FROM "postings" WHERE "postings"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/postings_controller.rb:44:in `set_posting'
+[31mUnpermitted parameter: :id[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1098)
+
+
+Started GET "/postings" for ::1 at 2020-12-11 23:49:14 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1660)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:07:39 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.7ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.7ms | Allocations: 1714)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:08:02 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:08:03 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1656)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:08:51 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:09:53 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:11:48 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1656)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:12:05 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.3ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1656)
+
+
+Started GET "/postings" for ::1 at 2020-12-12 00:12:51 -0600
+Processing by PostingsController#index as */*
+  [1m[36mPosting Load (0.2ms)[0m  [1m[34mSELECT "postings".* FROM "postings"[0m
+  ↳ app/controllers/postings_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
